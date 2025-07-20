@@ -7,6 +7,8 @@ import Product from './Models/Products.model.js';
 
 import ProductRoutes from './Routes/Product.routes.js';
 
+import CustomerRoutes from './Routes/Customer.route.js';
+
 import cors from 'cors';
 
 //kLoS1e7fxVf99olg
@@ -25,6 +27,7 @@ app.use(express.json());
 app.use(cors());
 
 app.use('/api/products',ProductRoutes);
+app.use('/api/customers',CustomerRoutes);
 
 
 app.listen(5000,()=>{
