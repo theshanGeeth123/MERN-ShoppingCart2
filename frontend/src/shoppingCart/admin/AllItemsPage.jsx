@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import Nav from '../Nav';
+
 function AllItemsPage() {
   const [products, setProducts] = useState([]);
   const navigate = useNavigate();
@@ -37,6 +39,9 @@ function AllItemsPage() {
 
   return (
     <div className="min-h-screen bg-gray-900 p-6 sm:p-8">
+
+      <Nav />
+
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4">
           <h1 className="text-3xl font-bold text-emerald-400">Product Management</h1>

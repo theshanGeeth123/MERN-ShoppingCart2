@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+import Nav from "./Nav";
+
 function AddItemPage() {
   const [product, setProduct] = useState({
     name: "",
@@ -56,6 +58,8 @@ function AddItemPage() {
 
   return (
     <div className="min-h-screen bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
+      <Nav/>
+
       <div className="max-w-md mx-auto bg-gray-800 rounded-xl shadow-2xl overflow-hidden">
         <div className="bg-gradient-to-r from-emerald-700 to-emerald-600 p-6">
           <h2 className="text-2xl font-bold text-white text-center">

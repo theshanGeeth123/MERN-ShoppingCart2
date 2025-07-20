@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import Nav from "./Nav";
+
 function CartPage() {
   const [cart, setCart] = useState([]);
   const [isRemoving, setIsRemoving] = useState(null);
@@ -42,6 +44,8 @@ function CartPage() {
 
   return (
     <div className="min-h-screen bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
+
+      <Nav />
       <div className="max-w-3xl mx-auto">
         <div className="flex justify-between items-center mb-8">
           <h1 className="text-3xl font-bold text-emerald-400">Your Shopping Cart</h1>

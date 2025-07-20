@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
+import Nav from "./Nav";
+
 function Home() {
   const [products, setProducts] = useState([]);
   const [quantities, setQuantities] = useState({});
@@ -44,6 +46,8 @@ function Home() {
 
   return (
     <div className="min-h-screen bg-gray-900 p-6 sm:p-8">
+      <Nav />
+
       <div className="max-w-7xl mx-auto">
         <h1 className="text-3xl font-bold text-emerald-400 mb-8">Our Products</h1>
         

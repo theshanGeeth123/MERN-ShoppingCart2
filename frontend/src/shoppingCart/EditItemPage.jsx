@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
+import Nav from "./Nav";
+
 function EditItemPage() {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -104,6 +106,8 @@ function EditItemPage() {
 
   return (
     <div className="min-h-screen bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
+
+      <Nav />
       <div className="max-w-3xl mx-auto">
         <div className="bg-gray-800 rounded-xl shadow-2xl overflow-hidden">
           {/* Header */}
