@@ -113,3 +113,17 @@ export const deleteUserById = async (req, res) => {
     res.status(500).json({ success: false, message: "Server error" });
   }
 };
+
+
+export const updateCustomer = async (req, res) => {
+  try {
+    const updatedCustomer = await Customer.findByIdAndUpdate(
+      req.params.id,
+      req.body,
+      { new: true }
+    );
+    res.json(updatedCustomer);
+  } catch (err) {
+    res.status(500).json({ message: "Failed to update user" });
+  }
+};

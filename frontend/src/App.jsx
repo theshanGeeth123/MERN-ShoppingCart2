@@ -13,6 +13,7 @@ import CustomerEntry from "./customer/CustomerEntry";
 import CustomerHome from "./customer/CustomerHome";
 import CustomerLogin from "./customer/CustomerLogin";
 import CustomerRegister from "./customer/CustomerRegister";
+import UserProfile from "./customer/UserProfile";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/customer/register" element={<CustomerRegister />} />
         <Route path="/customer/login" element={<CustomerLogin />} />
         <Route path="/customer/home" element={<CustomerHome />} />
+        <Route path="/customer/profile" element={<UserProfile />} />
       </Routes>
     </Router>
   );

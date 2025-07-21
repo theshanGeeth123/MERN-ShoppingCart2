@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate,Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 function CustomerHome() {
   const navigate = useNavigate();
@@ -11,7 +11,9 @@ function CustomerHome() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-green-100">
-      <h1 className="text-3xl font-bold mb-6">Welcome to Customer Home Page!</h1>
+      <h1 className="text-3xl font-bold mb-6">
+        Welcome to Customer Home Page!
+      </h1>
       <button
         onClick={handleLogout}
         className="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded"
@@ -19,8 +21,14 @@ function CustomerHome() {
         Logout
       </button>
 
-        <Link to={"/home"}>Shopping Cart Customer</Link>
-     
+      <Link to={"/home"}>Shopping Cart Customer</Link>
+
+      <Link
+        to="/customer/profile"
+        className="mt-4 text-blue-600 hover:underline"
+      >
+        View & Edit Profile
+      </Link>
     </div>
   );
 }
