@@ -11,6 +11,8 @@ import CustomerRoutes from './Routes/Customer.route.js';
 
 import AdminRoutes from './Routes/Admin.route.js';
 
+import CardRoutes from './Routes/UserCardDetails.route.js';
+
 import cors from 'cors';
 
 //kLoS1e7fxVf99olg
@@ -31,6 +33,7 @@ app.use(cors());
 app.use('/api/products',ProductRoutes);
 app.use('/api/customers',CustomerRoutes);
 app.use('/api/admin',AdminRoutes)
+app.use("/api/card", CardRoutes);
 
 
 app.listen(5000,()=>{
