@@ -9,6 +9,8 @@ import ProductRoutes from './Routes/Product.routes.js';
 
 import CustomerRoutes from './Routes/Customer.route.js';
 
+import AdminRoutes from './Routes/Admin.route.js';
+
 import cors from 'cors';
 
 //kLoS1e7fxVf99olg
@@ -28,6 +30,7 @@ app.use(cors());
 
 app.use('/api/products',ProductRoutes);
 app.use('/api/customers',CustomerRoutes);
+app.use('/api/admin',AdminRoutes)
 
 
 app.listen(5000,()=>{
