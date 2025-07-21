@@ -15,6 +15,14 @@ import CustomerLogin from "./customer/CustomerLogin";
 import CustomerRegister from "./customer/CustomerRegister";
 import UserProfile from "./customer/UserProfile";
 
+
+// Admin section
+
+import AdminRegister from "./admin/AdminRegister.jsx";
+import AdminLogin from "./admin/AdminLogin.jsx";
+import AdminHome from "./admin/AdminHome.jsx";
+import AddNewAdmin from "./admin/AddNewAdmin.jsx";
+
 function App() {
   return (
     <Router>
@@ -33,6 +41,13 @@ function App() {
         <Route path="/customer/login" element={<CustomerLogin />} />
         <Route path="/customer/home" element={<CustomerHome />} />
         <Route path="/customer/profile" element={<UserProfile />} />
+
+
+        {/* Admin routes */}
+        <Route path="/admin/register" element={<AdminRegister />} />
+        <Route path="/admin/login" element={<AdminLogin />} />
+        <Route path="/admin/home" element={<AdminHome />} />
+         <Route path="/admin/add" element={<AddNewAdmin />} />
       </Routes>
     </Router>
   );
