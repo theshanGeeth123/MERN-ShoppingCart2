@@ -40,7 +40,7 @@ function AllItemsPage() {
   return (
     <div className="min-h-screen bg-gray-900 p-6 sm:p-8">
 
-      <Nav />
+    
 
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4">

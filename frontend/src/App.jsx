@@ -22,6 +22,8 @@ import AdminRegister from "./admin/AdminRegister.jsx";
 import AdminLogin from "./admin/AdminLogin.jsx";
 import AdminHome from "./admin/AdminHome.jsx";
 import AddNewAdmin from "./admin/AddNewAdmin.jsx";
+import ViewUsers from "./admin/ViewUsers.jsx";
+import EditUser from "./admin/EditUser.jsx";
 
 function App() {
   return (
@@ -48,6 +50,9 @@ function App() {
         <Route path="/admin/login" element={<AdminLogin />} />
         <Route path="/admin/home" element={<AdminHome />} />
          <Route path="/admin/add" element={<AddNewAdmin />} />
+         <Route path="/admin/view-users" element={<ViewUsers />} />
+          <Route path="/admin/edit-user/:id" element={<EditUser />} />
+
       </Routes>
     </Router>
   );
