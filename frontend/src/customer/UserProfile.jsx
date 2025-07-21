@@ -92,12 +92,13 @@ function UserProfile() {
             Delete Profile
           </button>
 
-          <Link
-            to="/customer/home"
-            className="bg-gray-500 hover:bg-gray-600 text-white py-2 px-4 rounded inline-block text-center"
-          >
-            Back
-          </Link>
+          <button
+  onClick={() => window.location.href = "/customer/home"}
+  className="bg-gray-500 hover:bg-gray-600 text-white py-2 px-4 rounded"
+>
+  Back
+</button>
+
         </div>
       </div>
     </div>
