@@ -23,7 +23,8 @@ import AdminLogin from "./admin/AdminLogin.jsx";
 import AdminHome from "./admin/AdminHome.jsx";
 import AddNewAdmin from "./admin/AddNewAdmin.jsx";
 import ViewUsers from "./admin/ViewUsers.jsx";
-import EditUser from "./admin/EditUser.jsx";
+import EditUser from "./admin/EditUser.jsx";  
+import AddCardDetails from "./customer/cardDetails/AddCardDetails.jsx";
 
 function App() {
   return (
@@ -52,6 +53,7 @@ function App() {
          <Route path="/admin/add" element={<AddNewAdmin />} />
          <Route path="/admin/view-users" element={<ViewUsers />} />
           <Route path="/admin/edit-user/:id" element={<EditUser />} />
+          <Route path="/customer/add-card" element={<AddCardDetails />} />
 
       </Routes>
     </Router>
