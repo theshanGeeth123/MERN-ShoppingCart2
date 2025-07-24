@@ -40,6 +40,14 @@ function CustomerHome() {
       >
         ➕ Add Card Details
       </Link>
+
+      {/* Add Card View Button */}
+      <button
+        className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded"
+        onClick={() => navigate("/customer/view-cards")}
+      >
+        View My Cards
+      </button>
     </div>
   );
 }

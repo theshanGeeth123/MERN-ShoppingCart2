@@ -46,3 +46,14 @@ export const removeUserCard = async (req, res) => {
     res.status(500).json({ message: "Error deleting card", error });
   }
 };
+
+// Get all cards by userId
+export const getAllUserCards = async (req, res) => {
+  try {
+    const { userId } = req.params;
+    const cards = await Card.find({ userId });
+    res.status(200).json(cards);
+  } catch (error) {
+    res.status(500).json({ message: "Error retrieving cards", error });
+  }
+};
